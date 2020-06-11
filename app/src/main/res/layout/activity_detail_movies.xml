@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+
+    tools:context=".DetailMoviesActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--        <com.google.android.youtube.player.YouTubePlayerView-->
+
+        <!--            android:id="@+id/yt_player"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"/>-->
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+
+            android:layout_height="250dp"
+            android:src="@drawable/ic_menu_camera"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:theme="@style/OrangeAccent"
+            tools:layout_editor_absoluteX="353dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+
+            android:id="@+id/titleTes"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="title"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.034"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/titleTes2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Derscripsi"
+
+
+            android:textAlignment="textStart"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/titleTes3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:text=" Film  Recomendasi  : "
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/TempatRecomentation1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTes2">
+
+        </TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/TempatRecomentation1"
+            android:layout_width="match_parent"
+            android:layout_height="252dp"
+
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTes3" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="152dp"
+            android:src="@drawable/ic_menu_gallery"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="title :"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
